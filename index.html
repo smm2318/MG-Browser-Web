@@ -34,7 +34,7 @@
     .subtitle{font-size:clamp(14px,2vw,17px);line-height:1.7;color:#ffffffd9;margin:22px auto 38px;text-shadow:0 2px 12px #0008}
     .search-wrap{position:relative;isolation:isolate;width:min(760px,100%);margin:auto}
     .search-wrap:before{content:"";position:absolute;inset:-3px;border-radius:25px;background:var(--rgb);filter:blur(18px);opacity:.95;z-index:-2;animation:spin 4s linear infinite}
-    .search-wrap:after{content:"";position:absolute;inset:-1px;border-radius:23px;background:var(--rgb);z-index:-1;animation:spin 5s linear infinite}
+    .search-wrap:after{content:"";position:absolute;inset:-1px;border-radius:23px;background:var(--rgb);z-index:-1;animation:spin 4s linear infinite}
     .search-box{display:flex;align-items:center;gap:12px;min-height:76px;padding:10px 11px 10px 19px;border-radius:22px;background:rgba(11,18,26,.91);backdrop-filter:blur(24px);box-shadow:inset 0 0 0 1px #ffffff18,0 18px 65px #0005}
     .search-icon{flex:0 0 auto;color:#d9e6f5}
     #searchInput{flex:1;min-width:0;outline:none;border:0;background:transparent;color:white;font-size:15px;padding:14px 2px;text-align:left}
@@ -56,8 +56,7 @@
     .google{background:#fff;color:#4285f4}.youtube{background:#ff263a;color:#fff}.github{background:#202733;color:#fff}.wiki{background:#f4f4f4;color:#20242a}
     .shortcut-label{min-width:0}.shortcut-label strong{display:block;font-size:12px;font-weight:650;white-space:nowrap}.shortcut-label small{display:block;font-size:10px;color:#ffffffb7;margin-top:5px;white-space:nowrap}
     .footer{margin-top:auto;padding-top:60px;text-align:center;color:#ffffffa8;font-size:10px;letter-spacing:.5px;text-shadow:0 1px 8px #000}.footer strong{color:#fff}
-    @property --angle{syntax:"<angle>";initial-value:0deg;inherits:false}
-    @keyframes spin{to{--angle:360deg}}
+    @keyframes spin{to{transform:rotate(1turn)}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:760px){main{padding-top:70px}.shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-section{margin-top:52px}.shortcut{padding:15px}.section-title{letter-spacing:1px}}
     @media(max-width:520px){.topbar{padding:18px 17px}.online{display:none}.brand-name{font-size:18px}.brand-mark{width:40px;height:40px}main{padding:62px 18px 28px}h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2px}.subtitle{font-size:13px;margin:19px auto 31px}.search-box{gap:9px;min-height:65px;padding:8px 9px}.search-icon{width:19px}.search-wrap:before{filter:blur(13px)}#searchInput{font-size:12px;padding:10px 0}.engine-select{flex-basis:91px;max-width:91px;padding:11px 4px;font-size:10px}.search-btn{padding:13px 11px;font-size:11px}.search-btn span{display:none}.shortcuts{gap:10px}.shortcut{gap:10px;padding:13px 11px}.site-icon{width:37px;height:37px;flex-basis:37px;border-radius:11px}.shortcut-label strong{font-size:11px}.shortcut-label small{font-size:9px}.section-note{font-size:10px}.footer{padding-top:48px}}
