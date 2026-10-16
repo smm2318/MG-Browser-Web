@@ -15,27 +15,28 @@
     .wallpaper{position:fixed;inset:0;z-index:0;background-image:url("./images/nature-wallpaper.svg");background-size:cover;background-position:center 55%;transform:scale(1.02);pointer-events:none}
     .wallpaper::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,14,20,.44),rgba(5,13,20,.26) 35%,rgba(5,12,19,.62) 72%,rgba(5,10,16,.82)),linear-gradient(90deg,rgba(3,9,15,.3),transparent 50%,rgba(3,9,15,.18))}
     button,input,select{font:inherit}button{cursor:pointer}
-    .topbar{width:min(1440px,100%);margin:auto;padding:26px clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .topbar{width:min(1440px,100%);margin:auto;padding:14px clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none}
     .brand-mark{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,#2ea8ff,#3158df 60%,#904bff);box-shadow:0 8px 28px #2c76ff66,inset 0 1px 0 #ffffff77}
     .brand-mark svg{width:28px;height:28px}
-    .brand-name{font-size:20px;font-weight:750;letter-spacing:-.6px}.brand-tag{font-size:9px;letter-spacing:2.1px;opacity:.7;margin-top:4px}
+    .brand-name{font-size:20px;font-weight:750;letter-spacing:-.6px}.brand-tag{display:flex;align-items:center;gap:5px;font-size:9px;letter-spacing:1.7px;opacity:.9;margin-top:4px}.brand-tag svg{width:10px;height:10px;flex:0 0 10px;color:#8ce7ff}
     .top-right{display:flex;align-items:center;gap:12px}
     .online{display:flex;align-items:center;gap:8px;font-size:12px;color:#f2f6f8;text-shadow:0 1px 8px #000}
     .online-dot{width:7px;height:7px;border-radius:50%;background:#6fffc3;box-shadow:0 0 12px #6fffc3}
     .glass-btn{width:42px;height:42px;display:grid;place-items:center;border:1px solid #ffffff4a;border-radius:13px;color:white;background:#ffffff12;backdrop-filter:blur(16px);transition:.2s}
     .glass-btn:hover{background:#ffffff28;transform:translateY(-2px)}
-    .topbar,main{position:relative;z-index:1}\n    main{width:min(1120px,100%);margin:auto;min-height:calc(100vh - 96px);padding:clamp(62px,10vh,115px) 24px 34px;display:flex;flex-direction:column;align-items:center}
+    .topbar,main{position:relative;z-index:1}
+    main{width:min(1120px,100%);margin:auto;min-height:calc(100svh - 76px);padding:22px 24px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center}
     .hero{text-align:center;width:100%;animation:fadeUp .8s ease both}
     .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff45;background:#ffffff13;backdrop-filter:blur(14px);border-radius:99px;padding:9px 15px;font-size:11px;letter-spacing:1.1px;color:#fff;margin-bottom:25px;box-shadow:0 8px 30px #0002}
     .eyebrow-mark{color:#8ce7ff;font-size:15px}
-    h1{font-size:clamp(46px,7vw,82px);line-height:1.05;letter-spacing:-3.6px;margin:0;font-weight:780;text-shadow:0 4px 30px #0004}
-    h1 span{display:block;background:linear-gradient(95deg,#fff 5%,#d8f5ff 40%,#b7c7ff 70%,#ffe0fa 100%);background-clip:text;-webkit-background-clip:text;color:transparent;padding-bottom:7px}
-    .subtitle{font-size:clamp(14px,2vw,17px);line-height:1.7;color:#ffffffd9;margin:22px auto 38px;text-shadow:0 2px 12px #0008}
+    h1{font-size:clamp(42px,5.8vw,68px);line-height:1.12;letter-spacing:-2.7px;margin:0;font-weight:780;text-shadow:0 4px 30px #0004}
+    h1 span{display:block;background-image:url("./images/nature-wallpaper.svg");background-size:cover;background-position:center 58%;background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding:0 0 10px;filter:drop-shadow(0 3px 12px #0005)}
+    .subtitle{font-size:clamp(13px,1.5vw,16px);line-height:1.55;color:#ffffffed;margin:12px auto 23px;text-shadow:0 2px 12px #0008}
     .search-wrap{position:relative;isolation:isolate;width:min(760px,100%);margin:auto}
-    .search-wrap:before{content:"";position:absolute;inset:-3px;border-radius:25px;background:var(--rgb);filter:blur(18px);opacity:.95;z-index:-2;animation:spin 4s linear infinite}
-    .search-wrap:after{content:"";position:absolute;inset:-1px;border-radius:23px;background:var(--rgb);z-index:-1;animation:spin 4s linear infinite}
-    .search-box{display:flex;align-items:center;gap:12px;min-height:76px;padding:10px 11px 10px 19px;border-radius:22px;background:rgba(11,18,26,.91);backdrop-filter:blur(24px);box-shadow:inset 0 0 0 1px #ffffff18,0 18px 65px #0005}
+    .search-wrap:before{content:"";position:absolute;inset:-3px;border-radius:25px;background:linear-gradient(100deg,#ff3cac,#784bff,#20dfff,#49ff91,#ffdf5d,#ff3cac);background-size:300% 300%;filter:blur(18px);opacity:.95;z-index:-2;animation:rgbShift 3.2s ease-in-out infinite alternate}
+    .search-wrap:after{content:"";position:absolute;inset:-1px;border-radius:23px;background:linear-gradient(100deg,#ff3cac,#784bff,#20dfff,#49ff91,#ffdf5d,#ff3cac);background-size:300% 300%;z-index:-1;animation:rgbShift 3.2s ease-in-out infinite alternate}
+    .search-box{display:flex;align-items:center;gap:12px;min-height:66px;padding:8px 10px 8px 17px;border-radius:22px;background:rgba(11,18,26,.91);backdrop-filter:blur(24px);box-shadow:inset 0 0 0 1px #ffffff18,0 18px 65px #0005}
     .search-icon{flex:0 0 auto;color:#d9e6f5}
     #searchInput{flex:1;min-width:0;outline:none;border:0;background:transparent;color:white;font-size:15px;padding:14px 2px;text-align:left}
     #searchInput::placeholder{color:#ffffffa8}
@@ -43,23 +44,24 @@
     .engine-select option{background:#16212b;color:#fff}
     .search-btn{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:14px;padding:15px 20px;color:#fff;font-size:13px;font-weight:700;background:linear-gradient(135deg,#267dff,#7953f5);box-shadow:0 5px 22px #5269ff60;transition:.2s}
     .search-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px #5269ff99}
-    .hint{margin:20px 0 0;font-size:11px;color:#ffffffbd;text-shadow:0 1px 8px #000}
+    .hint{margin:13px 0 0;font-size:11px;color:#ffffffbd;text-shadow:0 1px 8px #000}
     kbd{font-family:inherit;border:1px solid #ffffff60;background:#ffffff18;border-radius:5px;padding:3px 7px;margin:0 3px}
-    .quick-section{width:min(760px,100%);margin-top:62px;animation:fadeUp .9s .12s ease both}
-    .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;text-shadow:0 2px 12px #000}
+    .quick-section{width:min(760px,100%);margin-top:29px;animation:fadeUp .9s .12s ease both}
+    .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;text-shadow:0 2px 12px #000}
     .section-title{font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}
     .section-note{font-size:11px;color:#ffffffc2}
     .shortcuts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
-    .shortcut{min-width:0;display:flex;align-items:center;gap:13px;padding:16px 17px;border:1px solid #ffffff35;border-radius:18px;background:linear-gradient(135deg,#ffffff26,#ffffff0b);backdrop-filter:blur(16px);color:white;text-decoration:none;transition:transform .22s,border-color .22s,background .22s;box-shadow:0 8px 28px #0002}
+    .shortcut{min-width:0;display:flex;align-items:center;gap:11px;padding:12px 13px;border:1px solid #ffffff35;border-radius:18px;background:linear-gradient(135deg,#ffffff26,#ffffff0b);backdrop-filter:blur(16px);color:white;text-decoration:none;transition:transform .22s,border-color .22s,background .22s;box-shadow:0 8px 28px #0002}
     .shortcut:hover{transform:translateY(-5px);border-color:#ffffff88;background:#ffffff30}
-    .site-icon{width:42px;height:42px;flex:0 0 42px;border-radius:13px;display:grid;place-items:center;font-size:20px;font-weight:800;box-shadow:inset 0 1px 0 #ffffff60}
+    .site-icon{width:38px;height:38px;flex:0 0 38px;border-radius:13px;display:grid;place-items:center;font-size:20px;font-weight:800;box-shadow:inset 0 1px 0 #ffffff60}
     .google{background:#fff;color:#4285f4}.youtube{background:#ff263a;color:#fff}.github{background:#202733;color:#fff}.wiki{background:#f4f4f4;color:#20242a}
     .shortcut-label{min-width:0}.shortcut-label strong{display:block;font-size:12px;font-weight:650;white-space:nowrap}.shortcut-label small{display:block;font-size:10px;color:#ffffffb7;margin-top:5px;white-space:nowrap}
-    .footer{margin-top:auto;padding-top:60px;text-align:center;color:#ffffffa8;font-size:10px;letter-spacing:.5px;text-shadow:0 1px 8px #000}.footer strong{color:#fff}
-    @keyframes spin{to{transform:rotate(1turn)}}
+    .footer{margin-top:auto;padding-top:18px;text-align:center;color:#ffffffa8;font-size:10px;letter-spacing:.5px;text-shadow:0 1px 8px #000}.footer strong{color:#fff}
+    @keyframes rgbShift{0%{background-position:0% 50%}50%{background-position:50% 50%}100%{background-position:100% 50%}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:760px){main{padding-top:70px}.shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-section{margin-top:52px}.shortcut{padding:15px}.section-title{letter-spacing:1px}}
-    @media(max-width:520px){.topbar{padding:18px 17px}.online{display:none}.brand-name{font-size:18px}.brand-mark{width:40px;height:40px}main{padding:62px 18px 28px}h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2px}.subtitle{font-size:13px;margin:19px auto 31px}.search-box{gap:9px;min-height:65px;padding:8px 9px}.search-icon{width:19px}.search-wrap:before{filter:blur(13px)}#searchInput{font-size:12px;padding:10px 0}.engine-select{flex-basis:91px;max-width:91px;padding:11px 4px;font-size:10px}.search-btn{padding:13px 11px;font-size:11px}.search-btn span{display:none}.shortcuts{gap:10px}.shortcut{gap:10px;padding:13px 11px}.site-icon{width:37px;height:37px;flex-basis:37px;border-radius:11px}.shortcut-label strong{font-size:11px}.shortcut-label small{font-size:9px}.section-note{font-size:10px}.footer{padding-top:48px}}
+    @media(max-width:760px){main{padding:28px 18px 14px}.shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-section{margin-top:23px}.shortcut{padding:15px}.section-title{letter-spacing:1px}}
+    @media(max-width:520px){.topbar{padding:12px 17px}.online{display:none}.brand-name{font-size:18px}.brand-mark{width:40px;height:40px}main{padding:22px 18px 12px}h1{font-size:clamp(40px,10vw,54px);letter-spacing:-1.7px}.subtitle{font-size:12px;margin:10px auto 18px}.search-box{gap:9px;min-height:65px;padding:8px 9px}.search-icon{width:19px}.search-wrap:before{filter:blur(13px)}#searchInput{font-size:12px;padding:10px 0}.engine-select{flex-basis:91px;max-width:91px;padding:11px 4px;font-size:10px}.search-btn{padding:13px 11px;font-size:11px}.search-btn span{display:none}.shortcuts{gap:10px}.shortcut{gap:10px;padding:13px 11px}.site-icon{width:37px;height:37px;flex-basis:37px;border-radius:11px}.shortcut-label strong{font-size:11px}.shortcut-label small{font-size:9px}.section-note{font-size:10px}.footer{padding-top:14px}}
+    @media(max-height:760px){.topbar{padding-top:9px;padding-bottom:9px}main{padding-top:10px;padding-bottom:8px}.eyebrow{margin-bottom:9px}h1{font-size:clamp(38px,5vw,56px)}.subtitle{margin:7px auto 13px}.search-box{min-height:58px}.hint{margin-top:9px}.quick-section{margin-top:17px}.section-head{margin-bottom:8px}.shortcut{padding:8px 10px}.site-icon{width:32px;height:32px;flex-basis:32px}.footer{padding-top:8px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -70,7 +72,7 @@
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="white" stroke-width="2.2"/><ellipse cx="20" cy="20" rx="6.5" ry="15" stroke="white" stroke-width="1.8"/><path d="M5.8 15h28.4M5.8 25h28.4" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
       </span>
-      <span><span class="brand-name">MG Browser</span><span class="brand-tag">EXPLORE WHAT'S NEXT</span></span>
+      <span><span class="brand-name">MG Browser</span><span class="brand-tag"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0 9.8 6.2 16 8l-6.2 1.8L8 16 6.2 9.8 0 8l6.2-1.8Z"/></svg>EXPLORE WHAT'S NEXT</span></span>
     </a>
     <div class="top-right">
       <div class="online"><span class="online-dot"></span><span>Ready to explore</span></div>
